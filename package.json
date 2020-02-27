@@ -1,0 +1,25 @@
+{
+  "name": "darksky_proxy",
+  "version": "1.0.0",
+  "description": "Simple Node.js proxy server for the DarkSky API",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nivagator/darksky_proxy.git"
+  },
+  "author": "Gavin Greer <gavin@gavingreer.com> (https://gavingreer.com)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/nivagator/darksky_proxy/issues"
+  },
+  "homepage": "https://github.com/nivagator/darksky_proxy#readme",
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "request": "^2.88.2"
+  }
+}
