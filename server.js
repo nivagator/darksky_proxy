@@ -35,14 +35,11 @@ app.use(helmet());
 
 // server.js - set the route
 app.get('/forecast/:lat,:long', (req,res) => {
-  // darksky url we will send the request to 
   var dsURL = 'https://api.darksky.net/forecast/';
-  // define a variable pointing to our secret key
   var dsSecret = process.env.DARKSKY_SECRET;
-  // additional darksky url parameters (these are optional)
   var dsSettings = '?exclude=minutely,hourly,daily,alerts,flags&units=auto';
-  // build the full Darksky url
   var url = dsURL + dsSecret + '/' + req.params.lat + ',' + req.params.long + dsSettings
+  console.log(url)
   // send the request and direct the results back to the user
   req.pipe(request(url)).pipe(res);
 });
